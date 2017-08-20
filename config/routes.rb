@@ -4,6 +4,13 @@ Rails.application.routes.draw do
       collection do
         post 'create_location'
         post 'create_post'
+        get 'index'
+        get 'categories'
+      end
+    end
+    resources :users do
+      collection do
+        post 'create'
       end
     end
   end
