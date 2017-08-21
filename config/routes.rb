@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :users do
       collection do
         post 'create'
+        get 'user_details'
+        patch 'update_profile'
       end
     end
   end
